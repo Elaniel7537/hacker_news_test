@@ -4,6 +4,9 @@
 
     --textColor-title: #3b3b3b;
 
-    --fontSize-title: 28px !important;
-    --fontSize-normal: 16px !important;
+    --fontSize-lg: 28px !important;
+    --fontSize-xs: 26px !important;
+    --fontSize-large: 16px !important;
+    --fontSize-medium: 14px !important;
+    --fontSize-small: 11px !important;
 }

@@ -9,7 +9,7 @@ const test = createSlice({
   initialState,
   reducers: {
     setTime: (state) => {
-      state.test = "Redux cambio";
+      state.testMessage = "Redux cambio";
     },
   },
 });

@@ -1,0 +1,70 @@
+.tabs-group {
+    margin: 5rem 0;
+}
+
+.btn-item {
+    width: 100px;
+    text-align: center;
+    border: solid 1px #d6d6d6;
+}
+
+.btn-item span {
+    font-family: Roboto;
+    font-size: var(--fontSize-normal);
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #606060;
+}
+
+.btn-item span {
+    font-family: Roboto;
+    font-size: var(--fontSize-normal);
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #606060;
+}
+
+.card-content {
+    border-radius: 6px;
+    border: solid 1px #979797;
+    background-color: #fff;
+}
+
+.card-content:hover {
+    opacity: 0.5;
+}
+
+.card-content .card-item {
+    padding: 1.5rem 1.1rem;
+}
+
+.card-time {
+    font-size: var(--fontSize-small);
+    display: flex;
+    align-items: center;
+}
+
+.card-time span {
+    margin-right: 0.5rem;
+}
+
+.card-text {
+    padding-top: 1rem;
+    font-size: var(--fontSize-medium);
+    font-weight: 500;
+}
+
+.card-content .card-action {
+    background: #F5F5F5;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.card-content .card-action span {
+    font-size: 24px;
+    color: #DD0031;
+}
