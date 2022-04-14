@@ -1,0 +1,19 @@
+.header-content {
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+    height: var(--headerHeight);
+    background-image: linear-gradient(to bottom, #ececec -32%, #fff 124%);
+    box-shadow: 0 1px 4px 0 rgba(0, 21, 41, 0.12);
+}
+
+.header-title {
+    font-family: Baskerville;
+    font-size: var(--fontSize-title);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: var(--textColor-title);
+}

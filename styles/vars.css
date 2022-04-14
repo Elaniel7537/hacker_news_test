@@ -1,0 +1,9 @@
+:root {
+    --headerHeight: 114px;
+    --backgroundColor: #fcfcfc;
+
+    --textColor-title: #3b3b3b;
+
+    --fontSize-title: 28px !important;
+    --fontSize-normal: 16px !important;
+}
