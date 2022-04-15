@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 // slices
 import test from "@features/testSlice";
+import hackerNews from "@features/hackerNewsSlice";
 
 export const store = configureStore({
   reducer: {
     test,
+    hackerNews,
   },
 });
 
