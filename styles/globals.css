@@ -1,7 +1,9 @@
 @import "~antd/dist/antd.css";
 @import "vars.css";
 @import "custom.css";
+@import "utils.css";
 @import "./pages/layouts.css";
+@import "./pages/pageNews.css";
 
 html,
 body {
@@ -16,6 +18,12 @@ body {
 .main-contend {
   background: transparent !important;
   min-height: calc(100vh - var(--headerHeight));
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
