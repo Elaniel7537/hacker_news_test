@@ -32,6 +32,7 @@
     border-radius: 6px;
     border: solid 1px #979797;
     background-color: #fff;
+    height: 100%;
 }
 
 .card-content:hover {
@@ -52,9 +53,10 @@
     margin-right: 0.5rem;
 }
 
-.card-text {
+.card-text,
+.card-text a {
     padding-top: 1rem;
-    font-size: var(--fontSize-medium);
+    font-size: var(--fontSize-medium) !important;
     font-weight: 500;
 }
 
