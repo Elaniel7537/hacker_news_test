@@ -1,21 +1,22 @@
-import { useState } from "react";
+import { RootStateOrAny, useDispatch } from "react-redux";
+import { useAppSelector } from "@app/hooks";
+import { setListType } from "@features/hackerNewsSlice";
+
 import { Radio } from "antd";
 
 const ButtonGroupComponent = () => {
-  const [size, setSize] = useState({ size: "all" });
-
+  const dispatch = useDispatch();
+  const { listType } = useAppSelector(
+    (state: RootStateOrAny) => state.hackerNews
+  );
   const onChange = (e: any) => {
-    setSize({ size: e.target.value });
+    dispatch(setListType(e.target.value));
   };
 
   return (
     <div className="tabs-group">
       <div className="flexbox">
-        <Radio.Group
-          value={size.size}
-          onChange={onChange}
-          className="btn-group"
-        >
+        <Radio.Group value={listType} onChange={onChange} className="btn-group">
           <Radio.Button value="all" className="btn-item">
             All
           </Radio.Button>
