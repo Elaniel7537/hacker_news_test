@@ -9,10 +9,15 @@ El aplicativo esta desarrollado en Next.js
 - Atomic Desing.
 - Ant Desing. https://ant.design/.
 - Mobil Firts.
+- Axios.
+- Eslint
 
 ## Integraciones
 
 - Lista de Hacker News
+- Agregar, eliminar y listar Favoritos
+- Paginacion.
+- Mobil firts
 
 ## Iniciar Proyecto
 
@@ -35,6 +40,4 @@ Link publico: https://gregarious-duckanoo-70e46a.netlify.app/
 
 ## Queda Pendiente: 
 
-- Agregar favoritos.
-- Mantener favoritos local storage.
-- Buscador select o buscador scroll.
+- Mejorar seleccion de Favoritos.

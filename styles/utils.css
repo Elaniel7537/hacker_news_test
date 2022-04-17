@@ -8,16 +8,30 @@
         padding: 0px 1rem;
     }
 
-    .select-contend {
+    .select-content {
         display: flex;
         justify-content: center;
 
+    }
+
+    .ant-spin-spinning {
+        justify-content: center;
+        margin-top: 1rem;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .header-content {
         padding-left: 8rem !important;
+    }
+
+    .select-content {
+        justify-content: left;
+    }
+
+    .ant-spin-spinning {
+        justify-content: right;
+        margin-top: 0px;
     }
 }
 
@@ -30,9 +44,6 @@
         padding: 0px 8rem;
     }
 
-    .select-contend {
-        justify-content: left;
-    }
 }
 
 @media only screen and (min-width : 1440px) {
