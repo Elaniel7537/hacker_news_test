@@ -11,10 +11,11 @@ import {
   HeartOutlined,
   FieldTimeOutlined,
 } from "@ant-design/icons";
+import { useEffect } from "react";
 
 const CardItemComponent = ({ content, id }: any) => {
   const dispatch = useDispatch();
-  const { listHackerNews } = useAppSelector(
+  const { listHackerNews, pageSize } = useAppSelector(
     (state: RootStateOrAny) => state.hackerNews
   );
 
@@ -31,7 +32,7 @@ const CardItemComponent = ({ content, id }: any) => {
     );
 
     dispatch(setListHackerNewsFaves(localFaves));
-    dispatch(setListaHackerNews(hackerNewsFaves));
+    dispatch(setListaHackerNews({ hits: hackerNewsFaves, nbHits: pageSize }));
   };
 
   return (

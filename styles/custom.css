@@ -57,3 +57,12 @@ span.anticon.anticon-down.ant-select-suffix {
     border-right-width: 1px;
     outline: 0;
 }
+
+.ant-spin-spinning {
+    width: 100%;
+    display: flex;
+}
+
+span.ant-spin-dot.ant-spin-dot-spin {
+    margin-right: 1rem
+}

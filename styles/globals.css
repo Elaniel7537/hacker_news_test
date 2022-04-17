@@ -40,8 +40,16 @@ a:hover {
   margin-top: 1rem !important;
 }
 
+.mt2 {
+  margin-top: 4rem !important;
+}
+
 .mb1 {
   margin-bottom: 1rem !important;
+}
+
+.mb2 {
+  margin-bottom: 4rem !important;
 }
 
 .mr1 {

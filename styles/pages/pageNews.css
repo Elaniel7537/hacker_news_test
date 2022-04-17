@@ -18,6 +18,7 @@
     color: #606060;
 }
 
+/* card item */
 .card-content {
     border-radius: 6px;
     border: solid 1px #979797;
@@ -59,15 +60,4 @@
 .card-content .card-action span {
     font-size: 24px;
     color: #DD0031;
-}
-
-.select-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.loading {
-    margin-top: 2rem;
 }

@@ -6,6 +6,11 @@ import { RequestStatusEnum, ListTypeEnum } from "@utils/enum";
 export const initialState = {
   listHackerNews: { loading: false, data: {} as {} },
   listHackerNewsFaves: null,
+  pagination: {
+    page: 0,
+    hitsPerPage: 10,
+  },
+  pageSize: 0,
   loading: RequestStatusEnum.IDLE,
   listType: ListTypeEnum.ALL,
   selectFilter: undefined,
@@ -16,10 +21,7 @@ export const initialState = {
 export const getHackerNewsFilter = createAsyncThunk(
   "hackerNews/getHackerNews",
   async (params: any) => {
-    const response: any = await Axios.get(
-      getHackerNewsRoute({ page: 0, hitsPerPage: 4, query: params.query })
-    );
-
+    const response: any = await Axios.get(getHackerNewsRoute(params));
     return response?.data;
   }
 );
@@ -29,7 +31,8 @@ const hackerNews = createSlice({
   initialState,
   reducers: {
     setListaHackerNews: (state, action) => {
-      state.listHackerNews.data = action.payload;
+      state.listHackerNews.data = action.payload.hits;
+      state.pageSize = action.payload.nbHits;
     },
     setListHackerNewsFaves: (state, action) => {
       state.listHackerNewsFaves = action.payload;
@@ -39,6 +42,9 @@ const hackerNews = createSlice({
     },
     setFilterSelect: (state, action) => {
       state.selectFilter = action.payload;
+    },
+    setPagination: (state, action) => {
+      state.pagination.page = action.payload.page;
     },
   },
   extraReducers: {
@@ -53,6 +59,7 @@ const hackerNews = createSlice({
       if (state.loading === RequestStatusEnum.PENDING) {
         state.loading = RequestStatusEnum.IDLE;
         state.listHackerNews = { loading: false, data: action.payload.hits };
+        state.pageSize = action.payload.nbHits;
       }
     },
     [String(getHackerNewsFilter.rejected)]: (state, action) => {
@@ -70,6 +77,7 @@ export const {
   setListHackerNewsFaves,
   setListType,
   setFilterSelect,
+  setPagination,
 } = hackerNews.actions;
 
 export default hackerNews.reducer;
