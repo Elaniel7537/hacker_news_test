@@ -5,7 +5,7 @@ import { store } from "@app/store";
 import { ConfigProvider } from "antd";
 import MainComponent from "@components/layouts/MainComponent";
 
-import "@styles/globals.css";
+import "../styles/globals.css";
 import es from "antd/lib/locale/es_ES";
 
 const MyApp: any = ({ Component, pageProps }: AppProps) => {
