@@ -5,10 +5,9 @@
 @import "./pages/layouts.css";
 @import "./pages/pageNews.css";
 
-html,
 body {
   background-color: var(--backgroundColor);
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: var(--fontSize-normal);
   font-weight: normal;
   font-stretch: normal;

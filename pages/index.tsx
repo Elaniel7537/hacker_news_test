@@ -46,7 +46,7 @@ const Home: NextPage = ({ serviseHackerNews }: any) => {
               );
             })}
 
-        {listType === ListTypeEnum.MYFAVES && !listHackerNewsFaves.length && (
+        {listType === ListTypeEnum.MYFAVES && !listHackerNewsFaves?.length && (
           <div className="flexbox">
             <Empty
               image={Empty.PRESENTED_IMAGE_SIMPLE}

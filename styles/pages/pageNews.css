@@ -9,19 +9,9 @@
 }
 
 .btn-item span {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: var(--fontSize-normal);
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: normal;
-    color: #606060;
-}
-
-.btn-item span {
-    font-family: Roboto;
-    font-size: var(--fontSize-normal);
-    font-weight: 500;
+    font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
@@ -57,7 +47,7 @@
 .card-text a {
     padding-top: 1rem;
     font-size: var(--fontSize-medium) !important;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .card-content .card-action {
