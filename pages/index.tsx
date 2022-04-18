@@ -74,18 +74,19 @@ const Home: NextPage = ({ serviseHackerNews }: any) => {
             />
           </div>
         )}
-        
+
         <Col xs={24} className="flexbox">
           {listHackerNews.loading && <span>Loading</span>}
         </Col>
 
         <Col xs={24} className="flexbox mt2 mb2">
           <Pagination
+            disabled={listType !== ListTypeEnum.ALL}
             defaultCurrent={pagination.page}
             current={pagination.page + 1}
             showSizeChanger={false}
             onChange={onchange}
-            total={pageSize}
+            total={listType !== ListTypeEnum.ALL ? 0 : pageSize}
             responsive={true}
           />
         </Col>
